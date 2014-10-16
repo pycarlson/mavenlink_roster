@@ -16,4 +16,7 @@
 /tmp
 
 # Ignore all .idea/* files (related to Rubymine)
-/.idea/*
+.idea
+
+# Ignore OS X specific DS_Store files
+.DS_Store
