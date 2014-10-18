@@ -2,5 +2,6 @@ Rails.application.routes.draw do
 
   root "static_pages#home"
   resources :departments
+  resources :employees
 
 end
