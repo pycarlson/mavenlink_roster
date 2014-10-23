@@ -5,6 +5,7 @@ class EmployeesController < ApplicationController
 
   def new
     @employee = Employee.new
+    @departments = Department.all
   end
 
   def create

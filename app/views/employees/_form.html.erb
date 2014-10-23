@@ -6,7 +6,7 @@
       <%= f.label :email_address %>
       <%= f.text_field :email_address %>
       <%= f.label :department %>
-      <%= f.text_field :department_id %>
+      <%= f.select(:department_id, @departments.collect {|d| [d.name, d.id]}, :prompt => 'Select') %>
     </div>
 
     <div>
