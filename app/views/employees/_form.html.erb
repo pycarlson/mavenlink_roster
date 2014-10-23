@@ -1,11 +1,11 @@
 <%= form_for(@employee) do |f| %>
 
-    <div style="background-color: #333;">
-      <%= f.text_field :user_id %>
-      <%= f.text_field :full_name, placeholder: 'First and Last Name' %>
-      <%= f.text_field :photo_path %>
+    <div>
+      <%= f.label :full_name %>
+      <%= f.text_field :full_name %>
+      <%= f.label :email_address %>
       <%= f.text_field :email_address %>
-      <%= f.text_field :headline %>
+      <%= f.label :department %>
       <%= f.text_field :department_id %>
     </div>
 
