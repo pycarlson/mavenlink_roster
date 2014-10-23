@@ -1,0 +1,5 @@
+<% @employees.each do |e| %>
+<%= e.full_name %>
+<%= e.email_address %>
+<%= Department.find(e.department_id).name %>
+<% end %>
