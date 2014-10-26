@@ -1,10 +1,12 @@
 class EmployeesController < ApplicationController
 
   def index
+    @employees = Employee.all
   end
 
   def new
     @employee = Employee.new
+    @departments = Department.all
   end
 
   def create

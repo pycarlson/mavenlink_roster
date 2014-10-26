@@ -1,12 +1,12 @@
 <%= form_for(@employee) do |f| %>
 
     <div>
-      <%= f.text_field :user_id %>
-      <%= f.text_field :full_name, placeholder: 'First and Last Name' %>
-      <%= f.text_field :photo_path %>
+      <%= f.label :full_name %>
+      <%= f.text_field :full_name %>
+      <%= f.label :email_address %>
       <%= f.text_field :email_address %>
-      <%= f.text_field :headline %>
-      <%= f.text_field :department_id %>
+      <%= f.label :department %>
+      <%= f.select(:department_id, @departments.collect {|d| [d.name, d.id]}, :prompt => 'Select') %>
     </div>
 
     <div>
