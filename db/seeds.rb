@@ -12,7 +12,7 @@ Department.create(name: "Executives")
 Department.create(name: "Marketing")
 Department.create(name: "Support")
 
-Employee.create(full_name: "Paulette Carlson", email_address: "paulette@mavenlink.com", department_id: 1)
+Employee.create(full_name: "Paulette Luftig", email_address: "paulette@mavenlink.com", department_id: 1)
 Employee.create(full_name: "Katlyn Daniluk", email_address: "katlyn@mavenlink.com", department_id: 1)
 Employee.create(full_name: "Mike Rizzo", email_address: "misterizzo@mavenlink.com", department_id: 4)
 Employee.create(full_name: "Keith Weissglass", email_address: "keith@mavenlink.com", department_id: 4)

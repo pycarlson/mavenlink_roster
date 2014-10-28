@@ -1,0 +1,76 @@
+@import "./_variables";
+
+.card {
+  width: 32%;
+  margin: 5px;
+  padding: 20px 10px;
+  float: left;
+  border: 5px solid $warmGrey4;
+  border-radius: 5px;
+  overflow: hidden;
+  min-height: 388px;
+  z-index: 0;
+  position: relative;
+
+  h2 {
+    text-align: center;
+  }
+
+  img {
+    margin-bottom: 30px;
+    display: inline-block;
+    width: 160px;
+    margin-left: 58px;
+  }
+
+  p {
+    color: $warmGrey8;
+    margin-bottom: 20px;
+  }
+}
+
+.linkedIn-link {
+  margin-bottom: 0;
+  text-align: center;
+  color: $white;
+  cursor: pointer;
+  padding-top: 10px;
+}
+
+.super-woman {
+  height: 170px;
+  margin-left: 40px;
+  width: 136px;
+  margin-bottom: 5px !important;
+}
+
+.card-copy {
+  border: 2px solid $warmGrey2;
+  padding: 20px;
+  width: 100%;
+}
+
+.back {
+  height: 105%;
+  width: 105%;
+  z-index: 5;
+  position: absolute;
+  top: -6px;
+  left: -6px;
+  display: none;
+  background-color: rgba(68, 143, 234, .9);
+  border: none;
+  padding: 20px;
+
+  &.card {
+    p {
+      padding-top: 0 !important;
+      color: $white;
+      padding-top: 30px;
+    }
+  }
+}
+
+.faded {
+  opacity: 0;
+}
