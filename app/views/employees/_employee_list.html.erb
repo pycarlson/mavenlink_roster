@@ -1,0 +1,24 @@
+<section>
+  <% @employees.each do |e| %>
+      <div class="front card">
+        <h2><%= e.full_name %></h2>
+        <% if e.email_address == 'paulette@mavenlink.com' %>
+            <%= image_tag('female-superhero.png', class: 'super-woman') %>
+        <% else %>
+            <%= image_tag(get_profile_pic(e)) %>
+        <% end %>
+        <div class="card-copy">
+          <p>Email: <%= e.email_address %><br>Department: <%= Department.find(e.department_id).name %></p>
+        </div>
+        <div class="back card">
+          <h2><%= e.full_name %></h2>
+          <p>Timeam latine cotidieque id nec. Qui an omnis praesent, ei vix falli corpora, eam at possim ocurreret vituperata.
+            In pri dicat quando facete, ullum aeque ubique has cu. Ludus dicam phaedrum ad his, malis admodum tibique no sea,
+            urbanitas expetendis vel an. Te qui vitae meliore invenire. Laboramus mnesarchum sea an, ex mea inimicus consetetur cotidieque.
+            <br>
+            <%= link_to 'View on LinkedIn', '', class: "linkedIn-link" %>
+          </p>
+        </div>
+      </div>
+  <% end %>
+</section>

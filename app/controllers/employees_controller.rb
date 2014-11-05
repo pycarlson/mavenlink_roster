@@ -10,8 +10,6 @@ class EmployeesController < ApplicationController
   end
 
   def create
-    p "*" * 100
-    p params
     employee = Employee.create(employee_params)
     if employee.save
       redirect_to root_path

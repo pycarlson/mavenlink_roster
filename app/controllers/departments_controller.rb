@@ -9,14 +9,17 @@ class DepartmentsController < ApplicationController
   end
 
   def create
-    p "*" * 100
-    p params
     department = Department.create(department_params)
     if department.save
       redirect_to root_path
     else
       render :new
     end
+  end
+
+  def show
+    @department = Department.find(params[:id])
+    @employees = @department.employees
   end
 
   protected
